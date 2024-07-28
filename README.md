@@ -19,9 +19,9 @@
   <table>
   <br />
     <tbody>
-      <tr><td>ASIGNATURA:</td><td colspan="6">Programacion Web 2</td></tr>
-      <tr><td>TÍTULO:</td><td colspan="6">Proyecto Final</td></tr>
-      <tr><td>PROYECTO:</td><td colspan="6">Academia Learning</td></tr>
+      <tr><td>ASIGNATURA:</td><td colspan="5">Programacion Web 2</td></tr>
+      <tr><td>TÍTULO:</td><td colspan="5">Proyecto Final</td></tr>
+      <tr><td>PROYECTO:</td><td colspan="5">Academia Learning</td></tr>
       <tr>
       <td>FECHA DE PRESENTACION:</td><td>27-Julio-2024</td><td>AÑO LECTIVO:</td><td>2024 A</td><td>NRO. SEMESTRE:</td><td>III</td>
       </tr>
@@ -153,11 +153,53 @@ La integración con el backend se realiza a través de llamadas HTTP a la API RE
 
 El frontend se desplegará utilizando servicios como Vercel, que proporciona una integración perfecta con Next.js para un despliegue rápido y sencillo.
 
-# RECURSOS
+### Home
+<div align="center">
+  <img src="img/H.png" alt="Home">
+</div>
+
+### Register
+<div align="center">
+  <img src="img/R.png" alt="Tablas Django">
+</div>
+
+### Cursos
+<div align="center">
+  <img src="img/Cursos.png" alt="Tablas Django">
+</div>
+
+### Secciones
+<div align="center">
+  <img src="img/Secciones.png" alt="Tablas Django">
+</div>
+
+### Modelo de Seccion
+<div align="center">
+  <img src="img/Seccion.png" alt="Tablas Django">
+</div>
+
+### Secciones CRUD - Add - Edit - Delete 
+<div align="center">
+  <img src="img/Seccion-CRUD.png" alt="Tablas Django">
+  <h4>Agregar Cancion</h4>
+  <img src="img/SeccionAdd.png" alt="Tablas Django">  <h4>Editar Cancion</h4>
+  <img src="img/SeccionEdit.png" alt="Tablas Django">
+  <h4>Eliminar Cancion</h4>
+  <img src="img/SeccionDelete.png" alt="Tablas Django">
+</div>
 
 
+## Referencias
 
-# LICENCIA
+1. React. (2023). *Getting Started – React*. [En línea]. Disponible en: https://reactjs.org/docs/getting-started.html.
+2. Next.js. (2023). *Next.js Documentation*. [En línea]. Disponible en: https://nextjs.org/docs.
+3. Tailwind CSS. (2023). *Tailwind CSS Documentation*. [En línea]. Disponible en: https://tailwindcss.com/docs.
+4. Cloudinary. (2023). *Cloudinary Documentation*. [En línea]. Disponible en: https://cloudinary.com/documentation.
+5. Django. (2023). *Django Documentation*. [En línea]. Disponible en: https://docs.djangoproject.com/en/stable/.
+6. Django Rest Framework. (2023). *Django Rest Framework Documentation*. [En línea]. Disponible en: https://www.django-rest-framework.org/.
+
+
+# Licencia
 Este proyecto está licenciado bajo los términos de la licencia MIT.
 
 [Git]: https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white
