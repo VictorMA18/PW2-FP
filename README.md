@@ -62,7 +62,7 @@ En esta sección, explicaremos detalladamente la implementación del backend par
 
 ## Diagrama de Flujo:
 <div align="center">
-  <img src="img/models_learning.png" alt="Tablas Django">
+  <img src="img/models_learning.png" alt="Secciones CRUD - Add - Edit - Delete ">
 
 *Figura 1\. Modelado de las tablas de la DB*
 </div>
@@ -165,50 +165,50 @@ El frontend se desplegará utilizando servicios como Vercel, que proporciona una
 
 ### Register
 <div align="center">
-  <img src="img/R.png" alt="Tablas Django">
+  <img src="img/R.png" alt="Register">
 
-*Figura 2\. Register - Academia Learning*
+*Figura 3\. Register - Academia Learning*
 </div>
 
 ### Cursos
 <div align="center">
-  <img src="img/Cursos.png" alt="Tablas Django">
+  <img src="img/Cursos.png" alt="Cursos">
 
-*Figura 3\. Cursos - Academia Learning*
+*Figura 4\. Cursos - Academia Learning*
 </div>
 
 ### Secciones
 <div align="center">
-  <img src="img/Secciones.png" alt="Tablas Django">
+  <img src="img/Secciones.png" alt="Secciones">
 
-*Figura 4\. Secciones - Academia Learning*
+*Figura 5\. Secciones - Academia Learning*
 </div>
 
-### Modelo de Seccion
+### Seccion
 <div align="center">
-  <img src="img/Seccion.png" alt="Tablas Django">
+  <img src="img/Seccion.png" alt="Seccion">
 
-*Figura 5\. Seccion del Curso - Academia Learning*
+*Figura 6\. Seccion del Curso - Academia Learning*
 </div>
 
 ### Secciones CRUD - Add - Edit - Delete 
 <div align="center">
   <h4>CRUD Secciones</h4>
-  <img src="img/Seccion-CRUD.png" alt="Tablas Django">
+  <img src="img/Seccion-CRUD.png" alt="Secciones CRUD - Add - Edit - Delete ">
 
-*Figura 6\. CRUD Seccion - Academia Learning*
+*Figura 7\. CRUD Seccion - Academia Learning*
   <h4>Agregar Seccion</h4>
-  <img src="img/SeccionAdd.png" alt="Tablas Django">
+  <img src="img/SeccionAdd.png" alt="Secciones CRUD - Add - Edit - Delete ">
   
-*Figura 7\. Agregar Seccion - Academia Learning*
+*Figura 8\. Agregar Seccion - Academia Learning*
   <h4>Editar Seccion</h4>
-  <img src="img/SeccionEdit.png" alt="Tablas Django">
+  <img src="img/SeccionEdit.png" alt="Secciones CRUD - Add - Edit - Delete ">
 
-*Figura 8\. Editar Seccion - Academia Learning*
+*Figura 9\. Editar Seccion - Academia Learning*
   <h4>Eliminar Seccion</h4>
-  <img src="img/SeccionDelete.png" alt="Tablas Django">
+  <img src="img/SeccionDelete.png" alt="Secciones CRUD - Add - Edit - Delete ">
 
-*Figura 9\. Eliminar Seccion - Academia Learning*
+*Figura 10\. Eliminar Seccion - Academia Learning*
 </div>
 
 ### Conclusiones
