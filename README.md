@@ -63,7 +63,10 @@ En esta sección, explicaremos detalladamente la implementación del backend par
 ## Diagrama de Flujo:
 <div align="center">
   <img src="img/models_learning.png" alt="Tablas Django">
+
+*Figura 1\. Modelado de las tablas de la DB*
 </div>
+
 
 ## Descripción General
 
@@ -156,38 +159,61 @@ El frontend se desplegará utilizando servicios como Vercel, que proporciona una
 ### Home
 <div align="center">
   <img src="img/H.png" alt="Home">
+
+*Figura 2\. Home - Academia Learning*
 </div>
 
 ### Register
 <div align="center">
   <img src="img/R.png" alt="Tablas Django">
+
+*Figura 2\. Register - Academia Learning*
 </div>
 
 ### Cursos
 <div align="center">
   <img src="img/Cursos.png" alt="Tablas Django">
+
+*Figura 3\. Cursos - Academia Learning*
 </div>
 
 ### Secciones
 <div align="center">
   <img src="img/Secciones.png" alt="Tablas Django">
+
+*Figura 4\. Secciones - Academia Learning*
 </div>
 
 ### Modelo de Seccion
 <div align="center">
   <img src="img/Seccion.png" alt="Tablas Django">
+
+*Figura 5\. Seccion del Curso - Academia Learning*
 </div>
 
 ### Secciones CRUD - Add - Edit - Delete 
 <div align="center">
+  <h4>CRUD Secciones</h4>
   <img src="img/Seccion-CRUD.png" alt="Tablas Django">
-  <h4>Agregar Cancion</h4>
-  <img src="img/SeccionAdd.png" alt="Tablas Django">  <h4>Editar Cancion</h4>
+
+*Figura 6\. CRUD Seccion - Academia Learning*
+  <h4>Agregar Seccion</h4>
+  <img src="img/SeccionAdd.png" alt="Tablas Django">
+  
+*Figura 7\. Agregar Seccion - Academia Learning*
+  <h4>Editar Seccion</h4>
   <img src="img/SeccionEdit.png" alt="Tablas Django">
-  <h4>Eliminar Cancion</h4>
+
+*Figura 8\. Editar Seccion - Academia Learning*
+  <h4>Eliminar Seccion</h4>
   <img src="img/SeccionDelete.png" alt="Tablas Django">
+
+*Figura 9\. Eliminar Seccion - Academia Learning*
 </div>
 
+### Conclusiones
+
+El desarrollo del proyecto Academia Learning ha sido una experiencia integral que ha permitido aplicar y coordinar diversas tecnologías en el desarrollo web. En el backend, Django y Django REST Framework han facilitado la creación de una API robusta y segura, simplificando la gestión de datos y la implementación de la lógica de negocio. En el frontend, React y Next.js han permitido construir una interfaz de usuario dinámica y eficiente, optimizando el rendimiento y la mantenibilidad del código. Tailwind CSS ha agilizado el proceso de estilizado con su enfoque de clases de utilidad predefinidas. La integración de estas tecnologías, apoyada por PostgreSQL para la gestión de bases de datos, ha garantizado un sistema modular y bien estructurado. Este proyecto ha permitido aplicar conocimientos avanzados de programación web, desarrollando competencias en diseño, implementación y despliegue de aplicaciones web completas
 
 ## Referencias
 
@@ -198,9 +224,6 @@ El frontend se desplegará utilizando servicios como Vercel, que proporciona una
 5. Django. (2023). *Django Documentation*. [En línea]. Disponible en: https://docs.djangoproject.com/en/stable/.
 6. Django Rest Framework. (2023). *Django Rest Framework Documentation*. [En línea]. Disponible en: https://www.django-rest-framework.org/.
 
-
-# Licencia
-Este proyecto está licenciado bajo los términos de la licencia MIT.
 
 [Git]: https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white
 [git-site]: https://git-scm.com/
