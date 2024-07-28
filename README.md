@@ -211,11 +211,11 @@ El frontend se desplegará utilizando servicios como Vercel, que proporciona una
 *Figura 10\. Eliminar Seccion - Academia Learning*
 </div>
 
-### Conclusiones
+# Conclusiones
 
 El desarrollo del proyecto Academia Learning ha sido una experiencia integral que ha permitido aplicar y coordinar diversas tecnologías en el desarrollo web. En el backend, Django y Django REST Framework han facilitado la creación de una API robusta y segura, simplificando la gestión de datos y la implementación de la lógica de negocio. En el frontend, React y Next.js han permitido construir una interfaz de usuario dinámica y eficiente, optimizando el rendimiento y la mantenibilidad del código. Tailwind CSS ha agilizado el proceso de estilizado con su enfoque de clases de utilidad predefinidas. La integración de estas tecnologías, apoyada por PostgreSQL para la gestión de bases de datos, ha garantizado un sistema modular y bien estructurado. Este proyecto ha permitido aplicar conocimientos avanzados de programación web, desarrollando competencias en diseño, implementación y despliegue de aplicaciones web completas
 
-## Referencias
+# Referencias
 
 1. React. (2023). *Getting Started – React*. [En línea]. Disponible en: https://reactjs.org/docs/getting-started.html.
 2. Next.js. (2023). *Next.js Documentation*. [En línea]. Disponible en: https://nextjs.org/docs.
