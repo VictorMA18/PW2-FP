@@ -116,7 +116,11 @@ En esta sección, detallaremos la implementación del frontend utilizando React 
 
 ## Descripción General
 
-El frontend del proyecto está construido utilizando React, una biblioteca de JavaScript para la construcción de interfaces de usuario. Además, utilizamos Next.js para el enrutamiento del lado del servidor y Tailwind CSS para el estilizado.
+El frontend del proyecto está construido utilizando Next.js en combinación con Tailwind CSS, y aquí se explica por qué esta elección es la más adecuada.
+
+Next.js es un framework basado en React que ofrece una serie de ventajas significativas para el desarrollo de aplicaciones web. En primer lugar, permite el renderizado en el lado del servidor (SSR), lo que mejora el tiempo de carga inicial de las páginas y facilita la optimización para motores de búsqueda (SEO). Este proceso reduce el tiempo necesario para que la página se muestre completamente al usuario, mejorando así su experiencia. Además, Next.js soporta la generación de páginas estáticas (SSG), lo que es ideal para contenido que no cambia frecuentemente. Al pre-renderizar las páginas durante la construcción, garantizamos que el contenido sea accesible rápidamente y sea fácilmente indexable por los motores de búsqueda.
+
+En cuanto al diseño, Tailwind CSS ofrece un enfoque moderno y eficiente para aplicar estilos. En lugar de escribir CSS personalizado en archivos separados, Tailwind permite aplicar estilos directamente en el HTML mediante clases de utilidad. Esto no solo reduce la necesidad de crear clases adicionales, sino que también facilita el diseño de interfaces responsivas y consistentes. Tailwind CSS permite una gran flexibilidad y personalización a través del archivo de configuración tailwind.config.js, donde es posible ajustar temas y estilos específicos para adaptarse a las necesidades del proyecto.
 
 ## Flujo de Trabajo
 
@@ -135,6 +139,31 @@ Nuestra aplicación React estará estructurada en componentes reutilizables y mo
 - **CourseDetail**: Un componente para mostrar los detalles de un curso seleccionado.
 - **UserProfile**: Un componente que gestiona y muestra la información del perfil del usuario.
 - **Review**: Un componente que permite a los usuarios escribir y ver reseñas de los cursos.
+
+### Layout Global
+
+El proyecto utiliza un layout global para mantener una estructura HTML y CSS uniforme en todas las páginas, integrando dos contextos clave: `AutoProvider` y `ThemeProvider`.
+
+- **AutoProvider (userContext)**: 
+  - Gestiona la autenticación y la información del usuario.
+  - Mantiene el estado del usuario y el estado de carga mientras se obtienen datos del servidor.
+  - Ofrece métodos para iniciar sesión, registrarse y cerrar sesión, almacenando el token de autenticación en el `localStorage`.
+  - Controla el acceso a diferentes secciones de la aplicación según el rol del usuario.
+
+- **ThemeProvider**:
+  - Permite la gestión de diferentes temas (claro, oscuro o basado en el sistema).
+  - Asegura una apariencia coherente en toda la aplicación.
+
+El layout envuelve un elemento `children`, que corresponde a los contenidos específicos de cada página. Incluye componentes como:
+
+- **Header**:
+  - Proporciona navegación a las principales secciones del sitio (inicio, cursos, planes).
+  - Integra un `ThemeToggle` para cambiar entre temas.
+  - Se conecta con `AuthProvider` para mostrar información del usuario autenticado y gestionar el registro.
+
+- **Footer**:
+  - Contiene el logo de la aplicación y enlaces dinámicos a redes sociales.
+  - Facilita la navegación y el acceso rápido a información relevante.
 
 ### Estilizado
 
@@ -157,20 +186,24 @@ La integración con el backend se realiza a través de llamadas HTTP a la API RE
 El frontend se desplegará utilizando servicios como Vercel, que proporciona una integración perfecta con Next.js para un despliegue rápido y sencillo.
 
 ### Home
+En la página de inicio, se utilizan dos componentes principales: Title y Pillars. El componente Title muestra el título de manera destacada, mientras que Pillars representa una serie de tarjetas que destacan las características principales de la aplicación.
 <div align="center">
   <img src="img/H.png" alt="Home">
 
 *Figura 2\. Home - Academia Learning*
 </div>
 
-### Register
-<div align="center">
-  <img src="img/R.png" alt="Register">
+### SignUp
+El componente `SignUp` está diseñado para manejar el registro de nuevos usuarios, específicamente para la inscripción de nuevos profesores. La interfaz se organiza en un formulario centrado que incluye campos para nombre, número telefónico, correo electrónico y contraseñas. La función `handleSignUp` gestiona el proceso de registro, verificando la coincidencia de contraseñas y utilizando el contexto de autenticación para completar el registro.
 
-*Figura 3\. Register - Academia Learning*
+<div align="center">
+  <img src="img/R.png" alt="SignUp">
+
+*Figura 3\. SignUp - Academia Learning*
 </div>
 
 ### Cursos
+La página de cursos utiliza varios componentes para estructurar la vista y presentar la información de manera efectiva. Title muestra el título de la sección de cursos, y CoursesList presenta una lista de cursos en formato de carrusel con componentes como Carousel, CarouselContent, CarouselItem, CarouselNext y CarouselPrevious. Cada curso se representa con CourseCard, y se agregan componentes como Certifications y Info para información adicional.
 <div align="center">
   <img src="img/Cursos.png" alt="Cursos">
 
@@ -178,6 +211,7 @@ El frontend se desplegará utilizando servicios como Vercel, que proporciona una
 </div>
 
 ### Secciones
+La página de detalles del curso muestra el título y la descripción a través de los componentes Title y Description. La información se organiza en una cuadrícula y se presentan las secciones del curso mediante el componente Sections. Además, se incluyen detalles sobre el contenido del curso y el perfil del profesor, con la posibilidad de enviar y leer comentarios.
 <div align="center">
   <img src="img/Secciones.png" alt="Secciones">
 
@@ -198,14 +232,21 @@ El frontend se desplegará utilizando servicios como Vercel, que proporciona una
 
 *Figura 7\. CRUD Seccion - Academia Learning*
   <h4>Agregar Seccion</h4>
+
+  **Agregar:** Permite a los profesores agregar una nueva sección al curso, introduciendo el nombre, descripción, cargando un video de vista previa y añadiendo archivos PDF.
+  
   <img src="img/SeccionAdd.png" alt="Secciones CRUD - Add - Edit - Delete ">
   
 *Figura 8\. Agregar Seccion - Academia Learning*
   <h4>Editar Seccion</h4>
+
+  **Modificar:** Permite modificar detalles como el nombre, descripción y video de una sección, además de manejar archivos PDF asociados.
   <img src="img/SeccionEdit.png" alt="Secciones CRUD - Add - Edit - Delete ">
 
 *Figura 9\. Editar Seccion - Academia Learning*
   <h4>Eliminar Seccion</h4>
+
+  **Eliminar:** Permite a los profesores ver los detalles de la sección seleccionada y eliminarla con un botón que envía una solicitud DELETE a la API.
   <img src="img/SeccionDelete.png" alt="Secciones CRUD - Add - Edit - Delete ">
 
 *Figura 10\. Eliminar Seccion - Academia Learning*
