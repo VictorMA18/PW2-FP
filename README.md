@@ -62,7 +62,7 @@ En esta sección, explicaremos detalladamente la implementación del backend par
 
 ## Diagrama de Flujo:
 <div align="center">
-  <img src="img/models_learning.png" alt="Secciones CRUD - Add - Edit - Delete ">
+  <img src="docs/models_learning.png" alt="Secciones CRUD - Add - Edit - Delete ">
 
 *Figura 1\. Modelado de las tablas de la DB*
 </div>
@@ -221,7 +221,7 @@ El frontend se desplegará utilizando servicios como Vercel, que proporciona una
 ### Home
 En la página de inicio, se utilizan dos componentes principales: Title y Pillars. El componente Title muestra el título de manera destacada, mientras que Pillars representa una serie de tarjetas que destacan las características principales de la aplicación.
 <div align="center">
-  <img src="img/H.png" alt="Home">
+  <img src="docs/H.png" alt="Home">
 
 *Figura 2\. Home - Academia Learning*
 </div>
@@ -230,7 +230,7 @@ En la página de inicio, se utilizan dos componentes principales: Title y Pillar
 El componente `SignUp` está diseñado para manejar el registro de nuevos usuarios, específicamente para la inscripción de nuevos profesores. La interfaz se organiza en un formulario centrado que incluye campos para nombre, número telefónico, correo electrónico y contraseñas. La función `handleSignUp` gestiona el proceso de registro, verificando la coincidencia de contraseñas y utilizando el contexto de autenticación para completar el registro.
 
 <div align="center">
-  <img src="img/R.png" alt="SignUp">
+  <img src="docs/R.png" alt="SignUp">
 
 *Figura 3\. SignUp - Academia Learning*
 </div>
@@ -238,7 +238,7 @@ El componente `SignUp` está diseñado para manejar el registro de nuevos usuari
 ### Cursos
 La página de cursos utiliza varios componentes para estructurar la vista y presentar la información de manera efectiva. Title muestra el título de la sección de cursos, y CoursesList presenta una lista de cursos en formato de carrusel con componentes como Carousel, CarouselContent, CarouselItem, CarouselNext y CarouselPrevious. Cada curso se representa con CourseCard, y se agregan componentes como Certifications y Info para información adicional.
 <div align="center">
-  <img src="img/Cursos.png" alt="Cursos">
+  <img src="docs/Cursos.png" alt="Cursos">
 
 *Figura 4\. Cursos - Academia Learning*
 </div>
@@ -246,14 +246,14 @@ La página de cursos utiliza varios componentes para estructurar la vista y pres
 ### Secciones
 La página de detalles del curso muestra el título y la descripción a través de los componentes Title y Description. La información se organiza en una cuadrícula y se presentan las secciones del curso mediante el componente Sections. Además, se incluyen detalles sobre el contenido del curso y el perfil del profesor, con la posibilidad de enviar y leer comentarios.
 <div align="center">
-  <img src="img/Secciones.png" alt="Secciones">
+  <img src="docs/Secciones.png" alt="Secciones">
 
 *Figura 5\. Secciones - Academia Learning*
 </div>
 
 ### Seccion
 <div align="center">
-  <img src="img/Seccion.png" alt="Seccion">
+  <img src="docs/Seccion.png" alt="Seccion">
 
 *Figura 6\. Seccion del Curso - Academia Learning*
 </div>
@@ -261,26 +261,26 @@ La página de detalles del curso muestra el título y la descripción a través 
 ### Secciones CRUD - Add - Edit - Delete 
 <div align="center">
   <h4>CRUD Secciones</h4>
-  <img src="img/Seccion-CRUD.png" alt="Secciones CRUD - Add - Edit - Delete ">
+  <img src="docs/Seccion-CRUD.png" alt="Secciones CRUD - Add - Edit - Delete ">
 
 *Figura 7\. CRUD Seccion - Academia Learning*
   <h4>Agregar Seccion</h4>
 
   **Agregar:** Permite a los profesores agregar una nueva sección al curso, introduciendo el nombre, descripción, cargando un video de vista previa y añadiendo archivos PDF.
   
-  <img src="img/SeccionAdd.png" alt="Secciones CRUD - Add - Edit - Delete ">
+  <img src="docs/SeccionAdd.png" alt="Secciones CRUD - Add - Edit - Delete ">
   
 *Figura 8\. Agregar Seccion - Academia Learning*
   <h4>Editar Seccion</h4>
 
   **Modificar:** Permite modificar detalles como el nombre, descripción y video de una sección, además de manejar archivos PDF asociados.
-  <img src="img/SeccionEdit.png" alt="Secciones CRUD - Add - Edit - Delete ">
+  <img src="docs/SeccionEdit.png" alt="Secciones CRUD - Add - Edit - Delete ">
 
 *Figura 9\. Editar Seccion - Academia Learning*
   <h4>Eliminar Seccion</h4>
 
   **Eliminar:** Permite a los profesores ver los detalles de la sección seleccionada y eliminarla con un botón que envía una solicitud DELETE a la API.
-  <img src="img/SeccionDelete.png" alt="Secciones CRUD - Add - Edit - Delete ">
+  <img src="docs/SeccionDelete.png" alt="Secciones CRUD - Add - Edit - Delete ">
 
 *Figura 10\. Eliminar Seccion - Academia Learning*
 </div>
