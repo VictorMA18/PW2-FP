@@ -181,6 +181,39 @@ Next.js facilita el manejo de rutas en la aplicación. Creamos archivos dentro d
 
 La integración con el backend se realiza a través de llamadas HTTP a la API RESTful proporcionada por el backend de Django. Utilizamos la biblioteca Axios para hacer estas solicitudes de manera eficiente.
 
+## Instalación y Configuración
+
+1. Clonar el repositorio:
+
+```
+git clone https://github.com/ynoacamino/pweb2-final-project.git
+```
+2. Instalar dependencias para el frontend:
+```
+cd client
+npm install
+```
+3. Instalar dependencias para el backend:
+```
+cd ../server
+pip install -r requirements.txt
+```
+4. Configurar las variables de entorno y los archivos de configuración según sea necesario.
+
+## Uso
+
+1. Iniciar el servidor de desarrollo para el frontend:
+```
+npm run dev
+```
+
+2. Iniciar el servidor de desarrollo para el backend:
+```
+python manage.py runserver
+```
+
+3. Acceder a la aplicación desde `http://localhost:3000` para el frontend y `http://localhost:8000` para el backend.
+
 ## Despliegue
 
 El frontend se desplegará utilizando servicios como Vercel, que proporciona una integración perfecta con Next.js para un despliegue rápido y sencillo.
